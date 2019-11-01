@@ -24,18 +24,16 @@
       <input type="checkbox" value="true"> Lembre me
     </label>
   </div>
-  <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+  <button class="btn btn-lg btn-primary btn-block" type="submit" id="redirect">Entrar</button>
   <p class="mt-5 mb-3 text-muted">&copy; 2019</p>
 </form>
 </body>
 </html>
-
-
-<script>
-  $(function(){
-    //function 
-    function showAllert(){
-      
-    }
+<script type="text/javascript">
+   $(document).ready(function(){
+  $("#redirect").click(function(){
+    url = "http://localhost/MyFindSexy/usuario";
+    $( location ).attr("href", url);
   });
+});
 </script>
