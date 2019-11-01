@@ -30,9 +30,9 @@
 </body>
 </html>
 <script type="text/javascript">
-   $(document).ready(function(){
+  $(document).ready(function(){
   $("#redirect").click(function(){
-    url = "http://localhost/MyFindSexy/usuario";
+    url = "http://localhost/MyFindSexy/dashboard";
     $( location ).attr("href", url);
   });
 });
